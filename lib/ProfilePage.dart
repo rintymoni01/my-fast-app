@@ -27,9 +27,9 @@ class _ProfilepageState extends State<Profilepage> {
             Row(
               children: [
                 Icon(Icons.home , size: 16,),
-                SizedBox(width: 180,),
-                Text("Hlw Rinty",),
-                SizedBox(width: 180,),
+                SizedBox(width: 170,),
+                Text("Hlw Rinty",style: TextStyle(color: Colors.deepPurple, fontSize: 20 ,fontWeight: FontWeight.w300),),
+                SizedBox(width: 170,),
                 Icon(Icons.search)
 
               ],
