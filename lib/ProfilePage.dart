@@ -19,7 +19,6 @@ class _ProfilepageState extends State<Profilepage> {
         }, icon: Icon(Icons.arrow_back_outlined, size: 16,color: Colors.blueAccent,)),
       ),
       body: Padding(
-
         padding: const EdgeInsets.all(16),
         child: Column(
 
@@ -33,9 +32,23 @@ class _ProfilepageState extends State<Profilepage> {
                 Icon(Icons.search)
 
               ],
+            ),
+            SizedBox(height: 16,),
+            Container(
+              height: 30,
+              width: 300,
+              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(18)),
+            ),
+            SizedBox(height: 10,),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(color: Colors.cyanAccent, borderRadius: BorderRadius.circular(50)),
             )
+            
           ],
         ),
+
       ),
     );
   }
