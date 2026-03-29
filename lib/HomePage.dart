@@ -4,6 +4,7 @@ import 'package:get_x/get.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 
 import 'Notification.dart';
+import 'ProfilePage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -16,28 +17,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading:
-        Row(
-          children: [
-           IconButton(onPressed: (){}, icon:  Icon(Icons.arrow_back_outlined ,size: 18,),),
-           IconButton(onPressed: (){}, icon:  Icon(Icons.arrow_forward, size: 18,),),
-           IconButton(onPressed: (){}, icon:  Icon(Icons.refresh, size: 18,),)
 
-          ],
-        ),
-        title: Center(child: Text("Hello world")),
-        actions: [
-          Row(
-            children: [
-              IconButton(onPressed: (){} , icon: Icon(Icons.search) ),
-              IconButton(onPressed: (){} , icon: Icon(Icons.notifications) ),
-
-            ],
-          )
-        ],
-        
-      ),
       body: Column(
         children: [
           Row(
@@ -53,7 +33,9 @@ class _HomepageState extends State<Homepage> {
               Row(
 
                 children: [
-                  IconButton(onPressed: (){}, icon: Icon(Icons.person,size: 16,)),
+                  IconButton(onPressed: (){
+                    Get.to(()=> Profilepage ());
+                  }, icon: Icon(Icons.person,size: 16,)),
                   IconButton(onPressed: (){
 
                     Get.to(()=> NotificationPage());
