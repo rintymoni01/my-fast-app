@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get_x/get.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 
+import 'MainPage.dart';
+import 'MyProject.dart';
 import 'Notification.dart';
 import 'ProfilePage.dart';
 
@@ -26,8 +28,12 @@ class _HomepageState extends State<Homepage> {
               Row(
                 children: [
                   IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_outlined, size: 16,)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.arrow_forward ,size: 16,)),
-                  IconButton(onPressed: (){}, icon: Icon(Icons.refresh ,size: 16,)),
+                  IconButton(onPressed: (){
+                    Get.to(()=> Myproject());
+                  }, icon: Icon(Icons.arrow_forward ,size: 16,)),
+                  IconButton(onPressed: (){
+                    Get.to(()=> Mainpage ());
+                  }, icon: Icon(Icons.refresh ,size: 16,)),
                 ],
               ),
               Row(
