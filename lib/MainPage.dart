@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get_x/get_core/src/get_main.dart';
+import 'package:get_x/get_navigation/src/extension_navigation.dart';
 
 class Mainpage extends StatefulWidget {
   const Mainpage({super.key});
@@ -15,7 +17,10 @@ class _MainpageState extends State<Mainpage> {
         children: [
           Row(
             children: [
-              Icon(Icons.arrow_back_outlined),
+              IconButton(onPressed: (){
+                Get.back();
+              }, icon: Icon(Icons.arrow_back_outlined),),
+
               Icon(Icons.arrow_forward),
             ],
           ),
