@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 import 'package:get_x/get_navigation/src/extension_navigation.dart';
 
+import 'ProfilePage.dart';
+
 class Myproject extends StatefulWidget {
   const Myproject({super.key});
 
@@ -22,7 +24,16 @@ class _MyprojectState extends State<Myproject> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(children: [Icon(Icons.arrow_back_ios_sharp, size: 20)]),
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        Get.back();
+                      },
+                      icon: Icon(Icons.arrow_back_ios_sharp),
+                    ),
+                  ],
+                ),
                 Row(
                   children: [Icon(Icons.arrow_forward_ios_rounded, size: 20)],
                 ),
@@ -62,12 +73,12 @@ class _MyprojectState extends State<Myproject> {
             Padding(
               padding: const EdgeInsets.all(12),
               child: GestureDetector(
-                onTap: (){
-                  Get.to(()=> )
+                onTap: () {
+                  Get.to(() => Profilepage());
                 },
                 child: Container(
                   width: 300,
-                  height:324,
+                  height: 324,
                   decoration: BoxDecoration(
                     border: Border.all(width: 2, color: Colors.blue),
                   ),
@@ -160,9 +171,7 @@ class _MyprojectState extends State<Myproject> {
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
-                                SizedBox(
-                                  width: 8,
-                                ),
+                                SizedBox(width: 8),
                                 Text(
                                   "I am a Rinty.",
                                   style: TextStyle(
@@ -171,13 +180,11 @@ class _MyprojectState extends State<Myproject> {
                                     fontSize: 14,
                                   ),
                                 ),
-
                               ],
                             ),
 
-
                             Padding(
-                              padding:  EdgeInsets.only(left: 40),
+                              padding: EdgeInsets.only(left: 40),
                               child: Text(
                                 " I have a Apps Developer.",
                                 style: TextStyle(
