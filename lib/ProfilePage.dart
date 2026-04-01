@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 import 'package:get_x/get_navigation/src/extension_navigation.dart';
 
+import 'TargetPage.dart';
+
 class Profilepage extends StatefulWidget {
   const Profilepage({super.key});
 
@@ -31,7 +33,9 @@ class _ProfilepageState extends State<Profilepage> {
           children: [
             Row(
               children: [
-                Icon(Icons.home, size: 16),
+                IconButton(onPressed: (){
+                  Get.to(()=>Targetpage ());
+                }, icon: Icon(Icons.home, size: 16),),
                 SizedBox(width: 170),
                 Text(
                   "Hlw Rinty",
@@ -41,7 +45,7 @@ class _ProfilepageState extends State<Profilepage> {
                     fontWeight: FontWeight.w300,
                   ),
                 ),
-                SizedBox(width: 170),
+                SizedBox(width: 140),
                 Icon(Icons.search),
               ],
             ),
