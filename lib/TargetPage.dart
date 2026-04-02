@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get_x/get_core/src/get_main.dart';
+import 'package:get_x/get_navigation/src/extension_navigation.dart';
+
+import 'TextField.dart';
 
 class Targetpage extends StatefulWidget {
   const Targetpage({super.key});
@@ -12,26 +16,28 @@ class _TargetpageState extends State<Targetpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.only(left: 30,right: 30,top: 5),
+        padding: const EdgeInsets.only(left: 30, right: 30, top: 5),
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 10,right: 4),
+              padding: const EdgeInsets.only(left: 10, right: 4),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.menu, color: Colors.black),
+                  IconButton(onPressed: (){
+                    Get.to(()=> Textfield());
+                  }, icon: Icon(Icons.menu, color: Colors.black),),
                   Icon(Icons.notifications),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10,bottom: 6),
+              padding: const EdgeInsets.only(left: 10, bottom: 6),
               child: Row(
                 children: [
                   Image.asset("assets/Images/Ellipse.png"),
                   Padding(
-                    padding: const EdgeInsets.only(left: 10,right: 10),
+                    padding: const EdgeInsets.only(left: 10, right: 10),
                     child: Column(
                       children: [
                         Padding(
@@ -143,7 +149,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 18,right: 20,top: 12),
+              padding: const EdgeInsets.only(left: 18, right: 20, top: 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -173,7 +179,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -230,7 +236,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -287,7 +293,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -342,7 +348,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -399,7 +405,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -456,7 +462,7 @@ class _TargetpageState extends State<Targetpage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               child: Container(
                 width: 430,
                 height: 50,
@@ -509,6 +515,79 @@ class _TargetpageState extends State<Targetpage> {
                       ),
                     ],
                   ),
+                ),
+              ),
+            ),
+            Container(
+              height: 50,
+
+              color: Color(0xFF1E1F4F),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 8, left: 10, right: 10,),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Image.asset(
+                          "assets/Images/home-outline.png",
+
+                        ),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 8,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset(
+                          "assets/Images/solar_card-outline.svg",
+
+                        ),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 8,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset(
+                          "assets/Images/Layer2.png",
+
+                        ),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 8,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset(
+                          "assets/Images/Layer22.svg",
+
+                        ),
+                        Text(
+                          "Home",
+                          style: TextStyle(
+                            color: Color(0xFFFFFFFF),
+                            fontSize: 8,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ),
