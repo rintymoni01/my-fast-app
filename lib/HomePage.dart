@@ -7,6 +7,7 @@ import 'MainPage.dart';
 import 'MyProject.dart';
 import 'Notification.dart';
 import 'ProfilePage.dart';
+import 'SignUpPage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -54,8 +55,14 @@ class _HomepageState extends State<Homepage> {
                 ],
               ),
             ],
-          )
+          ),
+        SizedBox(height: 50,),
+        Center(
+          child: ElevatedButton(onPressed: (){
+            Get.to(()=> Signuppage());
 
+          }, child: Text("Sign Up")),
+        ),
         ],
       ),
     );
