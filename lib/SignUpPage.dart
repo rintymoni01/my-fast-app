@@ -49,7 +49,7 @@ class _SignuppageState extends State<Signuppage> {
               decoration: InputDecoration(
                 
                 hintText: "Enter your name",
-                suffixIcon: Icon(Icons.lock),
+                prefixIcon: Image.asset("assets/Images/Icon.png"),
               ),
             ),
           ],
