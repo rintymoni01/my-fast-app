@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get_x/get_navigation/src/root/get_material_app.dart';
 
 import 'HomePage.dart';
+import 'Sign-in.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
     debugShowCheckedModeBanner: false,
-      home: const Homepage(),
+      home: const SignIn(),
     );
   }
 }
