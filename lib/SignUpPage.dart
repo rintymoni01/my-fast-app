@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get_x/get_connect/http/src/utils/utils.dart';
 
 class Signuppage extends StatefulWidget {
   const Signuppage({super.key});
@@ -34,7 +35,7 @@ class _SignuppageState extends State<Signuppage> {
                 color: Color(0xFF4A5565),
               ),
             ),
-            SizedBox(height: 30,),
+            SizedBox(height: 30),
             Text(
               "Full Name",
               style: TextStyle(
@@ -43,24 +44,82 @@ class _SignuppageState extends State<Signuppage> {
                 color: Color(0xFF364153),
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
 
             TextField(
               decoration: InputDecoration(
-                
                 hintText: "Enter your name",
                 prefixIcon: Image.asset("assets/Images/Icon.png"),
                 filled: true,
                 fillColor: Colors.white70,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10),
-
                 ),
-
               ),
             ),
-            SizedBox(height: 22,),
-            
+            SizedBox(height: 22),
+            Text(
+              "Email",
+              style: TextStyle(
+                color: Color(0xFF364153),
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Enter your email",
+                prefixIcon: Image.asset("assets/Images/Icon2.png"),
+                filled: true,
+                fillColor: Colors.white70,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            Text(
+              "Password",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Color(0xFF364153),
+              ),
+            ),
+            SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Enter your password",
+                prefixIcon: Image.asset("assets/Images/Icon1.png"),
+                filled: true,
+                fillColor: Colors.white70,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+            SizedBox(height: 30),
+            Text(
+              "Confirm Password",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: Color(0xFF364153),
+              ),
+            ),
+            SizedBox(height: 10),
+            TextField(
+              decoration: InputDecoration(
+                hintText: "Confirm your password",
+                prefixIcon: Image.asset("assets/Images/Icon1.png"),
+                filled: true,
+                fillColor: Colors.white70,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
           ],
         ),
       ),
