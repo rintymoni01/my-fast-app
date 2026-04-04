@@ -3,6 +3,7 @@ import 'package:get_x/get_connect/http/src/utils/utils.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 import 'package:get_x/get_navigation/src/extension_navigation.dart';
 
+import 'HomeFile.dart';
 import 'Login-Page.dart';
 import 'Sign-in.dart';
 
@@ -180,7 +181,7 @@ class _SignuppageState extends State<Signuppage> {
                   SizedBox(width: 2),
                   GestureDetector(
                     onTap: (){
-                      Get.to(()=>SignIn());
+                      Get.to(()=>Homefile());
                     },
                     child: Text(
                       "Login",
