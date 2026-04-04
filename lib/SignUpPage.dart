@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_x/get_connect/http/src/utils/utils.dart';
+import 'package:get_x/get_core/src/get_main.dart';
+import 'package:get_x/get_navigation/src/extension_navigation.dart';
+
+import 'Login-Page.dart';
 
 class Signuppage extends StatefulWidget {
   const Signuppage({super.key});
@@ -9,6 +13,7 @@ class Signuppage extends StatefulWidget {
 }
 
 class _SignuppageState extends State<Signuppage> {
+  bool isHidden = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,9 +94,24 @@ class _SignuppageState extends State<Signuppage> {
             ),
             SizedBox(height: 10),
             TextField(
+              obscureText: isHidden,
               decoration: InputDecoration(
                 hintText: "Enter your password",
                 prefixIcon: Image.asset("assets/Images/Icon1.png"),
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    setState(() {
+                      isHidden = !isHidden;
+                    });
+                  },
+                  icon: Icon(
+                    isHidden ? Icons.visibility : Icons.visibility_off,
+                  ),
+
+                  //   icon:  Icon(
+                  //   isHidden ? Icons.visibility : Icons.visibility_off,
+                  // ),
+                ),
                 filled: true,
                 fillColor: Colors.white70,
                 border: OutlineInputBorder(
@@ -120,6 +140,75 @@ class _SignuppageState extends State<Signuppage> {
                 ),
               ),
             ),
+            SizedBox(height: 23),
+
+            GestureDetector(
+              onTap: () {},
+              child: Container(
+                height: 56,
+                width: 476,
+                decoration: BoxDecoration(
+                  color: Color(0xff0A5C36),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+
+                child: Center(
+                  child: Text(
+                    "Sign Up",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                      color: Color(0xffFFFFFF),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("Already have an account?", style: TextStyle(
+                color: Color(0xff4A5565),
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+      ),),
+                SizedBox(width: 2),
+                Text(
+                  "Login",
+                  style: TextStyle(
+                    color: Color(0xff0A5C36),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+
+            // ElevatedButton(
+            //   style: ElevatedButton.styleFrom(
+            //     padding: EdgeInsets.symmetric(
+            //       vertical:15,
+            //       horizontal: 210,
+            //
+            //     ),
+            //     backgroundColor: Colors.deepPurple
+            //   ),
+            //
+            //   onPressed: () {
+            //     //  Get.to(()=>loginPage());
+            //   },
+            //   child: Text(
+            //     "Sign Up",
+            //     maxLines: 1,
+            //     style: TextStyle(
+            //       color: Color(0xFFFFFFFF),
+            //       fontSize: 16,
+            //       fontWeight: FontWeight.w400,
+            //
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),
