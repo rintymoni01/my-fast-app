@@ -62,7 +62,11 @@ class _HomefileState extends State<Homefile> {
                   width: 400,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all(color: Color(0xFF0A5C36)),
+                    border: Border.all( color: Color(0xFF0A5C36),
+                      width: 1
+
+                    ),
+
                   ),
                   child: Row(
                     children: [
@@ -88,6 +92,7 @@ class _HomefileState extends State<Homefile> {
                       borderRadius: BorderRadius.circular(10),
                       border: Border.all(
                         color: Color(0xff0A5C36),
+                        width: 1,
                       ),
                   ),
                   child:
