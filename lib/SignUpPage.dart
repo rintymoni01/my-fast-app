@@ -50,8 +50,17 @@ class _SignuppageState extends State<Signuppage> {
                 
                 hintText: "Enter your name",
                 prefixIcon: Image.asset("assets/Images/Icon.png"),
+                filled: true,
+                fillColor: Colors.white70,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+
+                ),
+
               ),
             ),
+            SizedBox(height: 22,),
+            
           ],
         ),
       ),
