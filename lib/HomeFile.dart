@@ -21,7 +21,6 @@ class _HomefileState extends State<Homefile> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
-
                   children: [
                     Text(
                       "AYA Shop",
@@ -62,11 +61,7 @@ class _HomefileState extends State<Homefile> {
                   width: 400,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    border: Border.all( color: Color(0xFF0A5C36),
-                      width: 2
-
-                    ),
-
+                    border: Border.all(color: Color(0xFF0A5C36), width: 2),
                   ),
                   child: Row(
                     children: [
@@ -84,22 +79,42 @@ class _HomefileState extends State<Homefile> {
                     ],
                   ),
                 ),
-                SizedBox(width: 15,),
+                SizedBox(width: 15),
                 Container(
                   height: 50,
                   width: 48,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: Color(0xff0A5C36),
-                        width: 2,
-                      ),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff0A5C36), width: 2),
                   ),
-                  child:
-                   Image.asset("assets/Images/container.png"),
+                  child: Image.asset("assets/Images/container.png"),
                 ),
               ],
-            )
+            ),
+            SizedBox(height: 22),
+            Center(
+              child: Container(
+
+                width: 401,
+                height: 208,
+
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(24),
+                  border: Border.all(width: 2, color: Colors.indigo),
+                ),
+                child: ClipRRect(
+
+                  borderRadius: BorderRadius.circular(24),
+                  // border radius match
+                  child: Image.asset(
+                    "assets/Images/wallpaper.jpeg",
+                    fit: BoxFit.cover, // 🔥 important line
+                    width: double.infinity,
+                    height: double.infinity,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
