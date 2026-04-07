@@ -108,12 +108,11 @@ class _HomefileState extends State<Homefile> {
                     BoxShadow(
                       color: Colors.black.withOpacity(0.15),
                       blurRadius: 10,
-                      offset: Offset(0, 4)
-
-                    )
-                  ]
+                      offset: Offset(0, 4),
+                    ),
+                  ],
                 ),
-                  child: ClipRRect(
+                child: ClipRRect(
                   borderRadius: BorderRadius.circular(24),
                   // border radius match
                   child: Stack(
@@ -134,8 +133,8 @@ class _HomefileState extends State<Homefile> {
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-
                             Row(
                               children: [
                                 Image.asset("assets/Images/star.png"),
@@ -151,14 +150,47 @@ class _HomefileState extends State<Homefile> {
                               ],
                             ),
 
+                            SizedBox(height: 10),
 
-                            Text("Book Top-Rated"),
+                            Text(
+                              "Book Top-Rated",
+                              style: TextStyle(
+                                color: Color(0xffFFFFFF),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 24,
+                              ),
+                            ),
                             Text(
                               "Service",
                               style: TextStyle(
                                 color: Color(0xffFFFFFF),
                                 fontWeight: FontWeight.w400,
                                 fontSize: 24,
+                              ),
+                            ),
+                            SizedBox(height: 12,),
+                            Container(
+                              height: 40,
+                              width: 145,
+
+                              decoration: BoxDecoration(
+                                color: Color(0xff0A5C36),
+                                borderRadius: BorderRadius.circular(14),
+                              ),
+                              child: Row( mainAxisAlignment:MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Explore Now",
+                                    style: TextStyle(
+                                      color: Color(0xffFFFFFF),
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14,
+                                    ),
+
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Icon(Icons.arrow_forward,color: Color(0xffFFFFFF),)
+                                ],
                               ),
                             ),
                           ],
