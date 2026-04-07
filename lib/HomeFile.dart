@@ -261,10 +261,11 @@ class _HomefileState extends State<Homefile> {
                       ),
                     ),
                   ),
-                  
                 ],
               ),
             ),
+            SizedBox(height: 39,),
+            Text("Top Business Categories",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,color: Color(0xff0A0A0A)),),
           ],
         ),
       ),
