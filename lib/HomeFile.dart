@@ -168,7 +168,7 @@ class _HomefileState extends State<Homefile> {
                                 fontSize: 24,
                               ),
                             ),
-                            SizedBox(height: 12,),
+                            SizedBox(height: 12),
                             Container(
                               height: 40,
                               width: 145,
@@ -177,7 +177,8 @@ class _HomefileState extends State<Homefile> {
                                 color: Color(0xff0A5C36),
                                 borderRadius: BorderRadius.circular(14),
                               ),
-                              child: Row( mainAxisAlignment:MainAxisAlignment.center,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
                                     "Explore Now",
@@ -186,10 +187,12 @@ class _HomefileState extends State<Homefile> {
                                       fontWeight: FontWeight.w400,
                                       fontSize: 14,
                                     ),
-
                                   ),
-                                  SizedBox(width: 8,),
-                                  Icon(Icons.arrow_forward,color: Color(0xffFFFFFF),)
+                                  SizedBox(width: 8),
+                                  Icon(
+                                    Icons.arrow_forward,
+                                    color: Color(0xffFFFFFF),
+                                  ),
                                 ],
                               ),
                             ),
@@ -199,6 +202,67 @@ class _HomefileState extends State<Homefile> {
                     ],
                   ),
                 ),
+              ),
+            ),
+            SizedBox(height: 23),
+            Container(
+              padding: const EdgeInsets.all(16),
+              height: 102,
+              width: 390,
+              decoration: BoxDecoration(
+                color: Color(0xffD8FFEE),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Are you a business owner?",
+                          style: TextStyle(
+                            color: Color(0xff0A5C36),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(height: 6,),
+                        Text("Subscribe to list your business and ",
+                          style: TextStyle(
+                            color: Color(0xff0A5C36),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,),),
+                        Text("reach thousands of customers",
+                          style: TextStyle(
+                            color: Color(0xff0A5C36),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,),),
+
+                      ],
+                    ),
+                  ),
+
+                  Container(
+                    height: 48,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color(0xff0A5C36),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Subscribe",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Color(0xffFFFFFF),
+                        ),
+                      ),
+                    ),
+                  ),
+                  
+                ],
               ),
             ),
           ],
