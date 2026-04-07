@@ -94,42 +94,78 @@ class _HomefileState extends State<Homefile> {
             SizedBox(height: 22),
             Center(
               child: Container(
-
                 width: 401,
                 height: 208,
 
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(24),
-                  border: Border.all(width: 2, color: Colors.indigo),
+                  gradient: LinearGradient(
+                    colors: [Color(0xFF5A6C7D), Color(0xFF3D4A5C)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.15),
+                      blurRadius: 10,
+                      offset: Offset(0, 4)
+
+                    )
+                  ]
                 ),
-                child: ClipRRect(
+                  child: ClipRRect(
                   borderRadius: BorderRadius.circular(24),
                   // border radius match
-                 child: Stack(
-                   children: [
-                     Align(
-                       alignment: Alignment.centerLeft,
-                       child: Opacity(opacity: 0.3,
-                         child: Image.asset(
-                           "assets/Images/wallpaper.jpeg",
-                           fit: BoxFit.cover,
-                           width: double.infinity,
-                           height: double.infinity,
-                         ),
-                       ),
-                     ),
+                  child: Stack(
+                    children: [
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Opacity(
+                          opacity: 0.3,
+                          child: Image.asset(
+                            "assets/Images/wallpaper.jpeg",
+                            fit: BoxFit.cover,
+                            width: double.infinity,
+                            height: double.infinity,
+                          ),
+                        ),
+                      ),
 
-                     Padding(
-                       padding: const EdgeInsets.all(20),
-                       child: Column(
-                         children: [
-                           
-                         ],
-                       ),
-                     )
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: Column(
+                          children: [
 
-                   ],
-                 ),
+                            Row(
+                              children: [
+                                Image.asset("assets/Images/star.png"),
+                                SizedBox(width: 8),
+                                Text(
+                                  "Featured",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 14,
+                                    color: Color(0xffFFFFFF),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+
+                            Text("Book Top-Rated"),
+                            Text(
+                              "Service",
+                              style: TextStyle(
+                                color: Color(0xffFFFFFF),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
