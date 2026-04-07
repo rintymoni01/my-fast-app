@@ -103,15 +103,33 @@ class _HomefileState extends State<Homefile> {
                   border: Border.all(width: 2, color: Colors.indigo),
                 ),
                 child: ClipRRect(
-
                   borderRadius: BorderRadius.circular(24),
                   // border radius match
-                  child: Image.asset(
-                    "assets/Images/wallpaper.jpeg",
-                    fit: BoxFit.cover, // 🔥 important line
-                    width: double.infinity,
-                    height: double.infinity,
-                  ),
+                 child: Stack(
+                   children: [
+                     Align(
+                       alignment: Alignment.centerLeft,
+                       child: Opacity(opacity: 0.3,
+                         child: Image.asset(
+                           "assets/Images/wallpaper.jpeg",
+                           fit: BoxFit.cover,
+                           width: double.infinity,
+                           height: double.infinity,
+                         ),
+                       ),
+                     ),
+
+                     Padding(
+                       padding: const EdgeInsets.all(20),
+                       child: Column(
+                         children: [
+                           
+                         ],
+                       ),
+                     )
+
+                   ],
+                 ),
                 ),
               ),
             ),
