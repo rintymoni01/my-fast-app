@@ -412,8 +412,9 @@ class _HomefileState extends State<Homefile> {
                   ],
                 ),
               ),
-              SizedBox(height: 46,),
-              Row(mainAxisAlignment: MainAxisAlignment.center,
+              SizedBox(height: 46),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
@@ -425,7 +426,7 @@ class _HomefileState extends State<Homefile> {
                           fontSize: 24,
                         ),
                       ),
-                      SizedBox(height: 3,),
+                      SizedBox(height: 3),
                       Text(
                         "Providers",
                         style: TextStyle(
@@ -436,7 +437,7 @@ class _HomefileState extends State<Homefile> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 62,),
+                  SizedBox(width: 62),
                   Column(
                     children: [
                       Text(
@@ -447,7 +448,7 @@ class _HomefileState extends State<Homefile> {
                           fontSize: 24,
                         ),
                       ),
-                      SizedBox(height: 3,),
+                      SizedBox(height: 3),
                       Text(
                         "Jobs Done",
                         style: TextStyle(
@@ -458,7 +459,7 @@ class _HomefileState extends State<Homefile> {
                       ),
                     ],
                   ),
-                  SizedBox(width: 60,),
+                  SizedBox(width: 60),
                   Column(
                     children: [
                       Text(
@@ -469,7 +470,7 @@ class _HomefileState extends State<Homefile> {
                           fontSize: 24,
                         ),
                       ),
-                      SizedBox(height: 3,),
+                      SizedBox(height: 3),
                       Text(
                         "Avg Rating",
                         style: TextStyle(
@@ -482,6 +483,35 @@ class _HomefileState extends State<Homefile> {
                   ),
                 ],
               ),
+              SizedBox(height: 32),
+            Padding(
+              padding: const EdgeInsets.only(right: 8),
+              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Top Rated Services",
+                    style: TextStyle(
+                      color: Color(0xff0A0A0A),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        "View All",
+                        style: TextStyle(
+                          color: Color(0xff0A5C36),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                        ),
+                      ),
+                      Icon(Icons.arrow_forward_ios_rounded,color: Color(0xff0A5C36),size: 14,),
+                    ],
+                  )
+                ],
+              ),
+            )
             ],
           ),
         ),
