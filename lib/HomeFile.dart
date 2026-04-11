@@ -12,6 +12,7 @@ class _HomefileState extends State<Homefile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffFFFFFF),
       body: Padding(
         padding: const EdgeInsets.all(15),
         child: Column(
@@ -280,14 +281,89 @@ class _HomefileState extends State<Homefile> {
             ),
             
             SizedBox(height:24 ,),
-           Row(
-             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-             children: [
-               Image.asset("assets/Images/Restaurants.png"),
-               Image.asset("assets/Images/Tax Services.png"),
-               Image.asset("assets/Images/Doctors.png"),
-               Image.asset("assets/Images/Plumbers.png"),
-             ],
+           Padding(
+             padding: const EdgeInsets.all(15),
+             child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+               children: [
+                 Column(
+                   children: [
+                     Image.asset("assets/Images/Restaurants.png",),
+                     Text("Restaurants"),
+                   ],
+                 ),
+                 Column(
+                   children: [
+                     Image.asset("assets/Images/Tax Services.png"),
+                     Text("Tax Services"),
+                   ],
+                 ),
+                 Column(
+                   children: [
+                     Image.asset("assets/Images/Doctors.png"),
+                     Text("Doctors"),
+                   ],
+                 ),
+                 Column(
+                   children: [
+                     Image.asset("assets/Images/Plumbers.png"),
+                     Text("Plumbers"),
+                   ],
+                 ),
+                 Column(
+                   children: [
+                     Container(
+                       decoration: BoxDecoration(
+                         borderRadius: BorderRadius.circular(12),
+                         boxShadow: [BoxShadow(
+                           color: Colors.black.withOpacity(0.4),
+                           blurRadius: 8,
+                           spreadRadius: 2,
+                           offset: Offset(2, 4)
+                         )]
+                       ),
+                       child: ClipRRect(
+                         borderRadius: BorderRadius.circular(12),
+                         child:
+                         Image.asset("assets/Images/Plumbers.png"),
+                       )
+
+                       ,
+
+                     ),
+
+                   ],
+
+                 ),
+
+                 Column(
+                   children: [
+                     Container(
+                       decoration: BoxDecoration(
+                         borderRadius: BorderRadius.circular(12),
+                         boxShadow: [
+                           BoxShadow(
+                             color: Colors.black.withOpacity(0.2), // হালকা shadow
+                             blurRadius: 8,
+                             spreadRadius: 2,
+                             offset: Offset(2, 4), // ডান-নিচে shadow
+                           ),
+                         ],
+                       ),
+                       child: ClipRRect(
+                         borderRadius: BorderRadius.circular(12),
+                         child: Image.asset(
+                           "assets/Images/Plumbers.png",
+                         ),
+                       ),
+                     ),
+                     SizedBox(height: 8),
+                     Text("Plumbers"),
+                   ],
+                 ),
+
+               ],
+             ),
            )
           ],
         ),
