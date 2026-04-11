@@ -227,18 +227,23 @@ class _HomefileState extends State<Homefile> {
                             fontSize: 16,
                           ),
                         ),
-                        SizedBox(height: 6,),
-                        Text("Subscribe to list your business and ",
+                        SizedBox(height: 6),
+                        Text(
+                          "Subscribe to list your business and ",
                           style: TextStyle(
                             color: Color(0xff0A5C36),
                             fontWeight: FontWeight.w400,
-                            fontSize: 14,),),
-                        Text("reach thousands of customers",
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          "reach thousands of customers",
                           style: TextStyle(
                             color: Color(0xff0A5C36),
                             fontWeight: FontWeight.w400,
-                            fontSize: 14,),),
-
+                            fontSize: 14,
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -264,8 +269,26 @@ class _HomefileState extends State<Homefile> {
                 ],
               ),
             ),
-            SizedBox(height: 39,),
-            Text("Top Business Categories",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,color: Color(0xff0A0A0A)),),
+            SizedBox(height: 39),
+            Text(
+              "Top Business Categories",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+                color: Color(0xff0A0A0A),
+              ),
+            ),
+            
+            SizedBox(height:24 ,),
+           Row(
+             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+             children: [
+               Image.asset("assets/Images/Restaurants.png"),
+               Image.asset("assets/Images/Tax Services.png"),
+               Image.asset("assets/Images/Doctors.png"),
+               Image.asset("assets/Images/Plumbers.png"),
+             ],
+           )
           ],
         ),
       ),
