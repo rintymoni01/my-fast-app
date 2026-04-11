@@ -279,92 +279,136 @@ class _HomefileState extends State<Homefile> {
                 color: Color(0xff0A0A0A),
               ),
             ),
-            
-            SizedBox(height:24 ,),
-           Padding(
-             padding: const EdgeInsets.all(15),
-             child: Row(
-               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-               children: [
-                 Column(
-                   children: [
-                     Image.asset("assets/Images/Restaurants.png",),
-                     Text("Restaurants"),
-                   ],
-                 ),
-                 Column(
-                   children: [
-                     Image.asset("assets/Images/Tax Services.png"),
-                     Text("Tax Services"),
-                   ],
-                 ),
-                 Column(
-                   children: [
-                     Image.asset("assets/Images/Doctors.png"),
-                     Text("Doctors"),
-                   ],
-                 ),
-                 Column(
-                   children: [
-                     Image.asset("assets/Images/Plumbers.png"),
-                     Text("Plumbers"),
-                   ],
-                 ),
-                 Column(
-                   children: [
-                     Container(
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(12),
-                         boxShadow: [BoxShadow(
-                           color: Colors.black.withOpacity(0.4),
-                           blurRadius: 8,
-                           spreadRadius: 2,
-                           offset: Offset(2, 4)
-                         )]
-                       ),
-                       child: ClipRRect(
-                         borderRadius: BorderRadius.circular(12),
-                         child:
-                         Image.asset("assets/Images/Plumbers.png"),
-                       )
 
-                       ,
-
-                     ),
-
-                   ],
-
-                 ),
-
-                 Column(
-                   children: [
-                     Container(
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(12),
-                         boxShadow: [
-                           BoxShadow(
-                             color: Colors.black.withOpacity(0.2), // হালকা shadow
-                             blurRadius: 8,
-                             spreadRadius: 2,
-                             offset: Offset(2, 4), // ডান-নিচে shadow
-                           ),
-                         ],
-                       ),
-                       child: ClipRRect(
-                         borderRadius: BorderRadius.circular(12),
-                         child: Image.asset(
-                           "assets/Images/Plumbers.png",
-                         ),
-                       ),
-                     ),
-                     SizedBox(height: 8),
-                     Text("Plumbers"),
-                   ],
-                 ),
-
-               ],
-             ),
-           )
+            SizedBox(height: 24),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.4),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 4),
+                            ),
+                          ],
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset("assets/Images/Restaurants.png"),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        "Restaurants",
+                        style: TextStyle(
+                          color: Color(0xff0A0A0A),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.4),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 4),
+                            ),
+                          ],
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset("assets/Images/Tax Services.png"),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        "Tax Services",
+                        style: TextStyle(
+                          color: Color(0xff0A0A0A),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.4),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 4),
+                            ),
+                          ],
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset("assets/Images/Doctors.png"),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        "Doctors",
+                        style: TextStyle(
+                          color: Color(0xff0A0A0A),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.4),
+                              blurRadius: 8,
+                              spreadRadius: 2,
+                              offset: Offset(2, 4),
+                            ),
+                          ],
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image.asset("assets/Images/Plumbers.png"),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        "Plumbers",
+                        style: TextStyle(
+                          color: Color(0xff0A0A0A),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
