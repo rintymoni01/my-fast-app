@@ -207,68 +207,70 @@ class _HomefileState extends State<Homefile> {
                 ),
               ),
               SizedBox(height: 23),
-              Container(
-                padding: const EdgeInsets.all(16),
-                height: 102,
-                width: 390,
-                decoration: BoxDecoration(
-                  color: Color(0xffD8FFEE),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Are you a business owner?",
-                            style: TextStyle(
-                              color: Color(0xff0A5C36),
-                              fontWeight: FontWeight.w400,
-                              fontSize: 16,
+              Center(
+                child: Container(
+                  padding: const EdgeInsets.all(16),
+                  height: 102,
+                  width: 390,
+                  decoration: BoxDecoration(
+                    color: Color(0xffD8FFEE),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Are you a business owner?",
+                              style: TextStyle(
+                                color: Color(0xff0A5C36),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 16,
+                              ),
                             ),
-                          ),
-                          SizedBox(height: 6),
-                          Text(
-                            "Subscribe to list your business and ",
-                            style: TextStyle(
-                              color: Color(0xff0A5C36),
-                              fontWeight: FontWeight.w400,
-                              fontSize: 14,
+                            SizedBox(height: 6),
+                            Text(
+                              "Subscribe to list your business and ",
+                              style: TextStyle(
+                                color: Color(0xff0A5C36),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14,
+                              ),
                             ),
-                          ),
-                          Text(
-                            "reach thousands of customers",
-                            style: TextStyle(
-                              color: Color(0xff0A5C36),
-                              fontWeight: FontWeight.w400,
-                              fontSize: 14,
+                            Text(
+                              "reach thousands of customers",
+                              style: TextStyle(
+                                color: Color(0xff0A5C36),
+                                fontWeight: FontWeight.w400,
+                                fontSize: 14,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
 
-                    Container(
-                      height: 48,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xff0A5C36),
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Subscribe",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xffFFFFFF),
+                      Container(
+                        height: 48,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xff0A5C36),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Subscribe",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xffFFFFFF),
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
               SizedBox(height: 39),
@@ -294,7 +296,7 @@ class _HomefileState extends State<Homefile> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.4),
+                                color: Colors.black.withOpacity(0.2),
                                 blurRadius: 8,
                                 spreadRadius: 2,
                                 offset: Offset(2, 4),
@@ -324,7 +326,7 @@ class _HomefileState extends State<Homefile> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.4),
+                                color: Colors.black.withOpacity(0.2),
                                 blurRadius: 8,
                                 spreadRadius: 2,
                                 offset: Offset(2, 4),
@@ -356,7 +358,7 @@ class _HomefileState extends State<Homefile> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.4),
+                                color: Colors.black.withOpacity(0.2),
                                 blurRadius: 8,
                                 spreadRadius: 2,
                                 offset: Offset(2, 4),
@@ -386,7 +388,7 @@ class _HomefileState extends State<Homefile> {
                             borderRadius: BorderRadius.circular(12),
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.black.withOpacity(0.4),
+                                color: Colors.black.withOpacity(0.2),
                                 blurRadius: 8,
                                 spreadRadius: 2,
                                 offset: Offset(2, 4),
@@ -401,6 +403,136 @@ class _HomefileState extends State<Homefile> {
                         SizedBox(height: 8),
                         Text(
                           "Plumbers",
+                          style: TextStyle(
+                            color: Color(0xff0A0A0A),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15,right: 15,bottom: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.2),
+                                blurRadius: 8,
+                                spreadRadius: 2,
+                                offset: Offset(2, 4),
+                              ),
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset("assets/Images/Handyman.png"),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          "Handyman",
+                          style: TextStyle(
+                            color: Color(0xff0A0A0A),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.2),
+                                blurRadius: 8,
+                                spreadRadius: 2,
+                                offset: Offset(2, 4),
+                              ),
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset(
+                              "assets/Images/Attorney.png",
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          "Attorney",
+                          style: TextStyle(
+                            color: Color(0xff0A0A0A),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.2),
+                                blurRadius: 8,
+                                spreadRadius: 2,
+                                offset: Offset(2, 4),
+                              ),
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset("assets/Images/Real Estate.png"),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          "Real Estate",
+                          style: TextStyle(
+                            color: Color(0xff0A0A0A),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.2),
+                                blurRadius: 8,
+                                spreadRadius: 2,
+                                offset: Offset(2, 4),
+                              ),
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image.asset("assets/Images/Groceries.png"),
+                          ),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          "Groceries",
                           style: TextStyle(
                             color: Color(0xff0A0A0A),
                             fontWeight: FontWeight.w400,
