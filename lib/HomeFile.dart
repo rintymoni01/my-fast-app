@@ -415,7 +415,7 @@ class _HomefileState extends State<Homefile> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 15,right: 15,bottom: 15),
+                padding: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -465,9 +465,7 @@ class _HomefileState extends State<Homefile> {
                           ),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12),
-                            child: Image.asset(
-                              "assets/Images/Attorney.png",
-                            ),
+                            child: Image.asset("assets/Images/Attorney.png"),
                           ),
                         ),
                         SizedBox(height: 8),
@@ -616,34 +614,73 @@ class _HomefileState extends State<Homefile> {
                 ],
               ),
               SizedBox(height: 32),
-            Padding(
-              padding: const EdgeInsets.only(right: 8),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Top Rated Services",
-                    style: TextStyle(
-                      color: Color(0xff0A0A0A),
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        "View All",
-                        style: TextStyle(
-                          color: Color(0xff0A5C36),
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                        ),
+              Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Top Rated Services",
+                      style: TextStyle(
+                        color: Color(0xff0A0A0A),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
                       ),
-                      Icon(Icons.arrow_forward_ios_rounded,color: Color(0xff0A5C36),size: 14,),
-                    ],
-                  )
-                ],
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "View All",
+                          style: TextStyle(
+                            color: Color(0xff0A5C36),
+                            fontWeight: FontWeight.w400,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios_rounded,
+                          color: Color(0xff0A5C36),
+                          size: 14,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            )
+              SizedBox(height: 12),
+              Container(
+                padding: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(2, 4)
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey[200],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset("assets/Images/Johnson.png",fit: BoxFit.cover,),
+
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              
             ],
           ),
         ),
