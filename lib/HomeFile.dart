@@ -767,6 +767,384 @@ class _HomefileState extends State<Homefile> {
                   ],
                 ),
               ),
+              SizedBox(height: 12,),
+              Container(
+                padding: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(2, 4),
+                    ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey[200],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset(
+                          "assets/Images/Solutions.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Premier Tax Solutions",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff0A0A0A),
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Container(
+                            height: 19,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xffE8FDF3),
+
+                            ),
+                            child:
+                            Center(
+                              child: Text(
+                                "Tax Services",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff0A5C36),
+                                ),
+                              ),
+                            ),
+
+
+                          ),
+
+
+                          SizedBox(height: 5),
+                          Row(
+                            children: [
+                              Icon(Icons.location_on_outlined, size: 12),
+                              Text(
+                                "New York, NY",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 12,
+                                color: Color(0xffFDC700),
+                              ),
+                              SizedBox(width: 4),
+                              Text(
+                                "4.8",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+
+                              SizedBox(width: 20),
+
+                              Text(
+                                "+156 reviews",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(2, 4),
+                    ),
+                  ],
+                ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                child: Row(
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey[200],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset(
+                          "assets/Images/Johnson.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Dr. Sarah Johnson - Family Medicine",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff0A0A0A),
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Container(
+                            height: 19,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xffE8FDF3),
+
+                            ),
+                            child:
+                            Center(
+                              child: Text(
+                                "Doctors",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff0A5C36),
+                                ),
+                              ),
+                            ),
+
+
+                          ),
+
+
+                          SizedBox(height: 5),
+                          Row(
+                            children: [
+                              Icon(Icons.location_on_outlined, size: 12),
+                              Text(
+                                "New York, NY",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 12,
+                                color: Color(0xffFDC700),
+                              ),
+                              SizedBox(width: 4),
+                              Text(
+                                "4.9",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+
+                              SizedBox(width: 20),
+
+                              Text(
+                                "+423 reviews",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                      color: Colors.black.withOpacity(0.2),
+                      offset: Offset(2, 4),
+                    ),
+                  ],
+                ),
+
+
+
+
+                child: Row(
+                  children: [
+                    Container(
+                      height: 80,
+                      width: 80,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.grey[200],
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: Image.asset(
+                          "assets/Images/Johnson.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Dr. Sarah Johnson - Family Medicine",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff0A0A0A),
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Container(
+                            height: 19,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xffE8FDF3),
+
+                            ),
+                            child:
+                            Center(
+                              child: Text(
+                                "Doctors",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff0A5C36),
+                                ),
+                              ),
+                            ),
+
+
+                          ),
+
+
+                          SizedBox(height: 5),
+                          Row(
+                            children: [
+                              Icon(Icons.location_on_outlined, size: 12),
+                              Text(
+                                "New York, NY",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 12,
+                                color: Color(0xffFDC700),
+                              ),
+                              SizedBox(width: 4),
+                              Text(
+                                "4.9",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+
+                              SizedBox(width: 20),
+
+                              Text(
+                                "+423 reviews",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
