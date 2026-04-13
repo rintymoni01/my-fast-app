@@ -815,7 +815,7 @@ class _HomefileState extends State<Homefile> {
                           SizedBox(height: 4),
                           Container(
                             height: 19,
-                            width: 60,
+                            width: 80,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color(0xffE8FDF3),
@@ -887,6 +887,12 @@ class _HomefileState extends State<Homefile> {
                   ],
                 ),
               ),
+
+
+
+
+
+
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -901,22 +907,6 @@ class _HomefileState extends State<Homefile> {
                     ),
                   ],
                 ),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 child: Row(
                   children: [
                     Container(
@@ -929,7 +919,7 @@ class _HomefileState extends State<Homefile> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Image.asset(
-                          "assets/Images/Johnson.png",
+                          "assets/Images/Plumbers.png",
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -940,7 +930,7 @@ class _HomefileState extends State<Homefile> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Dr. Sarah Johnson - Family Medicine",
+                            "Quick Fix Plumbing",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
@@ -959,7 +949,7 @@ class _HomefileState extends State<Homefile> {
                             child:
                             Center(
                               child: Text(
-                                "Doctors",
+                                "Plumbers",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
