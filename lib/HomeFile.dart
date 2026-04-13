@@ -721,6 +721,7 @@ class _HomefileState extends State<Homefile> {
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
+                              SizedBox(width: 6,),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -841,6 +842,7 @@ class _HomefileState extends State<Homefile> {
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
+                              SizedBox(width: 6,),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -891,7 +893,7 @@ class _HomefileState extends State<Homefile> {
 
 
 
-
+SizedBox(height:12 ,),
 
               Container(
                 padding: EdgeInsets.all(12),
@@ -919,7 +921,7 @@ class _HomefileState extends State<Homefile> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Image.asset(
-                          "assets/Images/Plumbers.png",
+                          "assets/Images/Plumbing.png",
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -966,6 +968,7 @@ class _HomefileState extends State<Homefile> {
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
+                              SizedBox(width: 6,),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -986,7 +989,7 @@ class _HomefileState extends State<Homefile> {
                               ),
                               SizedBox(width: 4),
                               Text(
-                                "4.9",
+                                "4.6",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -997,7 +1000,7 @@ class _HomefileState extends State<Homefile> {
                               SizedBox(width: 20),
 
                               Text(
-                                "+423 reviews",
+                                "+287 reviews",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -1012,6 +1015,7 @@ class _HomefileState extends State<Homefile> {
                   ],
                 ),
               ),
+              SizedBox(height: 12,),
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -1042,7 +1046,7 @@ class _HomefileState extends State<Homefile> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Image.asset(
-                          "assets/Images/Johnson.png",
+                          "assets/Images/Restaurant.png",
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -1053,7 +1057,7 @@ class _HomefileState extends State<Homefile> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Dr. Sarah Johnson - Family Medicine",
+                            "Tony's Italian Restaurant",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.w400,
@@ -1072,7 +1076,7 @@ class _HomefileState extends State<Homefile> {
                             child:
                             Center(
                               child: Text(
-                                "Doctors",
+                                "Restaurants",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -1089,6 +1093,7 @@ class _HomefileState extends State<Homefile> {
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
+                              SizedBox(width: 6,),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -1109,7 +1114,7 @@ class _HomefileState extends State<Homefile> {
                               ),
                               SizedBox(width: 4),
                               Text(
-                                "4.9",
+                                "4.5",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -1120,7 +1125,7 @@ class _HomefileState extends State<Homefile> {
                               SizedBox(width: 20),
 
                               Text(
-                                "+423 reviews",
+                                "+342 reviews",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
