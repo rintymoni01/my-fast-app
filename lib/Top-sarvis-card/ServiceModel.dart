@@ -35,4 +35,11 @@ List<ServiceModel> services = [
     reviews: 98,
     image: "assets/Images/Tax Services.png",
   ),
+  ServiceModel(name: "Quick Fix Plumbing",
+      category:"Plumbers",
+      location:"Barcelona",
+      rating: 4.6,
+      reviews: 342 ,
+      image: "assets/Images/Plumbing.png"
+  )
 ];
