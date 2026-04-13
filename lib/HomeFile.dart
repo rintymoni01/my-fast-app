@@ -658,7 +658,7 @@ class _HomefileState extends State<Homefile> {
                       blurRadius: 8,
                       spreadRadius: 2,
                       color: Colors.black.withOpacity(0.2),
-                      offset: Offset(2, 4)
+                      offset: Offset(2, 4),
                     ),
                   ],
                 ),
@@ -673,33 +673,69 @@ class _HomefileState extends State<Homefile> {
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(12),
-                        child: Image.asset("assets/Images/Johnson.png",fit: BoxFit.cover,),
-
+                        child: Image.asset(
+                          "assets/Images/Johnson.png",
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
-                 Column(
-                   children: [
-                     Text("Dr. Sarah Johnson - Family Medicine"),
-                     Text("Doctors"),
-                     Row(
-                       children: [
-                         Icon(Icons.location_on_outlined),
-                         Text("New York, NY"),
-                       ],
-                     ),
-                     Row(
-                       children: [
-                         Icon(Icons.star),
-                       ],
-                     )
-                   ],
-                 )
-
+                    Column(
+                      children: [
+                        Text(
+                          "Dr. Sarah Johnson - Family Medicine",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff0A0A0A),
+                          ),
+                        ),
+                        Text(
+                          "Doctors",
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xff0A5C36),
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Icon(Icons.location_on_outlined,size: 12,),
+                            Text(
+                              "New York, NY",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff717182),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Icon(Icons.star,size: 12,color: Color(0xffFDC700),),
+                            Text(
+                              "4.9  ",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff717182),
+                              ),
+                            ),
+                            Text(
+                              "423 reviews",
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff717182),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ],
-
                 ),
               ),
-              
             ],
           ),
         ),
