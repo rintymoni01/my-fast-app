@@ -679,59 +679,90 @@ class _HomefileState extends State<Homefile> {
                         ),
                       ),
                     ),
-                    Column(
-                      children: [
-                        Text(
-                          "Dr. Sarah Johnson - Family Medicine",
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xff0A0A0A),
+                    Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Dr. Sarah Johnson - Family Medicine",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff0A0A0A),
+                            ),
                           ),
-                        ),
-                        Text(
-                          "Doctors",
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            color: Color(0xff0A5C36),
+                          SizedBox(height: 4),
+                          Container(
+                            height: 19,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Color(0xffE8FDF3),
+
+                            ),
+                            child:
+                            Center(
+                              child: Text(
+                                "Doctors",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff0A5C36),
+                                ),
+                              ),
+                            ),
+
+
                           ),
-                        ),
-                        Row(
-                          children: [
-                            Icon(Icons.location_on_outlined,size: 12,),
-                            Text(
-                              "New York, NY",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff717182),
+
+
+                          SizedBox(height: 5),
+                          Row(
+                            children: [
+                              Icon(Icons.location_on_outlined, size: 12),
+                              Text(
+                                "New York, NY",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Icon(Icons.star,size: 12,color: Color(0xffFDC700),),
-                            Text(
-                              "4.9  ",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff717182),
+                            ],
+                          ),
+                          SizedBox(height: 6),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                size: 12,
+                                color: Color(0xffFDC700),
                               ),
-                            ),
-                            Text(
-                              "423 reviews",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0xff717182),
+                              SizedBox(width: 4),
+                              Text(
+                                "4.9",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
+
+                              SizedBox(width: 20),
+
+                              Text(
+                                "+423 reviews",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w400,
+                                  color: Color(0xff717182),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
