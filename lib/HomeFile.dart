@@ -676,8 +676,27 @@ class _HomefileState extends State<Homefile> {
                         child: Image.asset("assets/Images/Johnson.png",fit: BoxFit.cover,),
 
                       ),
-                    )
+                    ),
+                 Column(
+                   children: [
+                     Text("Dr. Sarah Johnson - Family Medicine"),
+                     Text("Doctors"),
+                     Row(
+                       children: [
+                         Icon(Icons.location_on_outlined),
+                         Text("New York, NY"),
+                       ],
+                     ),
+                     Row(
+                       children: [
+                         Icon(Icons.star),
+                       ],
+                     )
+                   ],
+                 )
+
                   ],
+
                 ),
               ),
               
