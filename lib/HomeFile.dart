@@ -699,10 +699,8 @@ class _HomefileState extends State<Homefile> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color(0xffE8FDF3),
-
                             ),
-                            child:
-                            Center(
+                            child: Center(
                               child: Text(
                                 "Doctors",
                                 style: TextStyle(
@@ -712,16 +710,13 @@ class _HomefileState extends State<Homefile> {
                                 ),
                               ),
                             ),
-
-
                           ),
-
 
                           SizedBox(height: 5),
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
-                              SizedBox(width: 6,),
+                              SizedBox(width: 6),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -768,7 +763,7 @@ class _HomefileState extends State<Homefile> {
                   ],
                 ),
               ),
-              SizedBox(height: 12,),
+              SizedBox(height: 12),
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -820,10 +815,8 @@ class _HomefileState extends State<Homefile> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color(0xffE8FDF3),
-
                             ),
-                            child:
-                            Center(
+                            child: Center(
                               child: Text(
                                 "Tax Services",
                                 style: TextStyle(
@@ -833,16 +826,13 @@ class _HomefileState extends State<Homefile> {
                                 ),
                               ),
                             ),
-
-
                           ),
-
 
                           SizedBox(height: 5),
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
-                              SizedBox(width: 6,),
+                              SizedBox(width: 6),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -890,10 +880,7 @@ class _HomefileState extends State<Homefile> {
                 ),
               ),
 
-
-
-
-SizedBox(height:12 ,),
+              SizedBox(height: 12),
 
               Container(
                 padding: EdgeInsets.all(12),
@@ -946,10 +933,8 @@ SizedBox(height:12 ,),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color(0xffE8FDF3),
-
                             ),
-                            child:
-                            Center(
+                            child: Center(
                               child: Text(
                                 "Plumbers",
                                 style: TextStyle(
@@ -959,16 +944,13 @@ SizedBox(height:12 ,),
                                 ),
                               ),
                             ),
-
-
                           ),
-
 
                           SizedBox(height: 5),
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
-                              SizedBox(width: 6,),
+                              SizedBox(width: 6),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -1015,7 +997,7 @@ SizedBox(height:12 ,),
                   ],
                 ),
               ),
-              SizedBox(height: 12,),
+              SizedBox(height: 12),
               Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -1030,9 +1012,6 @@ SizedBox(height:12 ,),
                     ),
                   ],
                 ),
-
-
-
 
                 child: Row(
                   children: [
@@ -1071,10 +1050,8 @@ SizedBox(height:12 ,),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Color(0xffE8FDF3),
-
                             ),
-                            child:
-                            Center(
+                            child: Center(
                               child: Text(
                                 "Restaurants",
                                 style: TextStyle(
@@ -1084,16 +1061,13 @@ SizedBox(height:12 ,),
                                 ),
                               ),
                             ),
-
-
                           ),
-
 
                           SizedBox(height: 5),
                           Row(
                             children: [
                               Icon(Icons.location_on_outlined, size: 12),
-                              SizedBox(width: 6,),
+                              SizedBox(width: 6),
                               Text(
                                 "New York, NY",
                                 style: TextStyle(
@@ -1133,6 +1107,216 @@ SizedBox(height:12 ,),
                                 ),
                               ),
                             ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.only(left: 6),
+                child: Text(
+                  "Why AYA Shop?",
+                  style: TextStyle(
+                    color: Color(0xff000000),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+              SizedBox(height: 3),
+              Padding(
+                padding: const EdgeInsets.only(left: 6),
+                child: Text(
+                  "Trusted by thousands worldwide",
+                  style: TextStyle(
+                    color: Color(0xff6A7282),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ),
+              SizedBox(height: 16),
+              Container(
+                height: 107,
+                width: 508,
+                decoration: BoxDecoration(
+                  color: Color(0xff0A5C36),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20, bottom: 20),
+                      child: Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(14),
+                          color: Colors.green,
+                        ),
+                        child: Image.asset("assets/Images/Businesses.png"),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16, top: 20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Verified Businesses",
+                            style: TextStyle(
+                              color: Color(0xffFFFFFF),
+                              fontSize: 14,
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                          SizedBox(height: 9),
+                          Text(
+                            "All businesses are verified by our admin team before listing",
+                            style: TextStyle(
+                              color: Color(0xffFFFFFFB2),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            "listing",
+                            style: TextStyle(
+                              color: Color(0xffFFFFFFB2),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 12),
+              Container(
+                height: 93,
+                width: 508,
+
+                decoration: BoxDecoration(
+                  color: Color(0xffF9FAFB),
+                  borderRadius: BorderRadius.circular(16),
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //     blurRadius: 4,
+                  //     spreadRadius: 2,
+                  //     color: Colors.black.withOpacity(0.4),
+                  //     offset: Offset(2, 4),
+                  //   ),
+                  // ],
+                ),
+
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(14),
+                          color: Color(0xff0A5C36),
+                        ),
+                        child: Image.asset(
+                          "assets/Images/Search.png",
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(top: 19),
+                      child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Easy Search ",style: TextStyle(color: Color(0xff000000),fontSize: 14,fontWeight: FontWeight.w400),),
+                          SizedBox(height: 9,),
+                          Text(
+                            "Search by service type, location, and distance to find ",
+                            style: TextStyle(
+                              color: Color(0xff4A5565),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            "exactly what you need ",
+                            style: TextStyle(
+                              color: Color(0xff4A5565),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 12,),
+              Container(
+                height: 93,
+                width: 508,
+
+                decoration: BoxDecoration(
+                  color: Color(0xffF9FAFB),
+                  borderRadius: BorderRadius.circular(16),
+                  // boxShadow: [
+                  //   BoxShadow(
+                  //     blurRadius: 4,
+                  //     spreadRadius: 2,
+                  //     color: Colors.black.withOpacity(0.4),
+                  //     offset: Offset(2, 4),
+                  //   ),
+                  // ],
+                ),
+
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20),
+                      child: Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(14),
+                          color: Color(0xff0A5C36),
+                        ),
+                        child: Image.asset(
+                          "assets/Images/Location.png",
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(top: 19),
+                      child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Location-Based Results ",style: TextStyle(color: Color(0xff000000),fontSize: 14,fontWeight: FontWeight.w400),),
+                          SizedBox(height: 9,),
+                          Text(
+                            "Auto-detect your location or search by zip code  ",
+                            style: TextStyle(
+                              color: Color(0xff4A5565),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
+                          ),
+                          Text(
+                            "to find nearby businesses ",
+                            style: TextStyle(
+                              color: Color(0xff4A5565),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                            ),
                           ),
                         ],
                       ),
