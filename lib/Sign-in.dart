@@ -3,6 +3,7 @@ import 'package:get_x/get_connect/http/src/utils/utils.dart';
 import 'package:get_x/get_core/src/get_main.dart';
 import 'package:get_x/get_navigation/src/extension_navigation.dart';
 
+import 'HomeFile.dart';
 import 'SignUpPage.dart';
 
 class SignIn extends StatefulWidget {
@@ -110,21 +111,28 @@ class _SignInState extends State<SignIn> {
                 ],
               ),
               SizedBox(height: 23),
-              Container(
-                height: 56,
-                width: 476,
-          
-                decoration: BoxDecoration(
-                  color: Color(0xff0A5C36),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Text(
-                    "Sign In",
-                    style: TextStyle(
-                      color: Color(0xffFFFFFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
+              GestureDetector(
+                onTap: (){
+
+                  Get.to(()=>Homefile());
+
+                },
+                child: Container(
+                  height: 56,
+                  width: 476,
+
+                  decoration: BoxDecoration(
+                    color: Color(0xff0A5C36),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Sign In",
+                      style: TextStyle(
+                        color: Color(0xffFFFFFF),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
                   ),
                 ),

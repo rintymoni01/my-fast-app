@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get_x/get_connect/http/src/utils/utils.dart';
+import 'package:get_x/get_core/src/get_main.dart';
+import 'package:get_x/get_navigation/src/extension_navigation.dart';
+import 'package:my_fast_apps/services/View/ListingScreen.dart';
+import 'package:my_fast_apps/services/View/services-view.dart';
 
 class Homefile extends StatefulWidget {
   const Homefile({super.key});
@@ -627,22 +631,27 @@ class _HomefileState extends State<Homefile> {
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          "View All",
-                          style: TextStyle(
-                            color: Color(0xff0A5C36),
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                    GestureDetector(
+                      onTap: (){
+                       Get.to(()=>ListingScreen());
+                      },
+                      child: Row(
+                        children: [
+                          Text(
+                            "View All",
+                            style: TextStyle(
+                              color: Color(0xff0A5C36),
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                            ),
                           ),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios_rounded,
-                          color: Color(0xff0A5C36),
-                          size: 14,
-                        ),
-                      ],
+                          Icon(
+                            Icons.arrow_forward_ios_rounded,
+                            color: Color(0xff0A5C36),
+                            size: 14,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

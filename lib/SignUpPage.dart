@@ -181,7 +181,7 @@ class _SignuppageState extends State<Signuppage> {
                   SizedBox(width: 2),
                   GestureDetector(
                     onTap: (){
-                      Get.to(()=>Homefile());
+                      Get.to(()=>SignIn());
                     },
                     child: Text(
                       "Login",
